@@ -9,7 +9,7 @@ export const Form = () => {
   const username = useForm();
   const password = useForm();
 
-  const { userLogin } = React.useContext(UserContext);
+  const { userLogin, error, loading } = React.useContext(UserContext);
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -36,7 +36,10 @@ export const Form = () => {
           id="password"
           {...password}
         />
-        <Button>Entrar</Button>
+        <Button disabled={loading}>
+          {loading ? "Carregando..." : "Entrar"}
+        </Button>
+        {error && <p>{error}</p>}
       </form>
       <Link to="/login/criar">Cadastro</Link>
     </div>
