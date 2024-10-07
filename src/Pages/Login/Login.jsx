@@ -1,9 +1,10 @@
+import React from "react";
 import { Navigate, Route, Routes } from "react-router-dom";
+import styles from "./Login.module.css";
 import { Form } from "./Form";
 import { CreateAccount } from "./CreateAccount";
 import { PasswordLoss } from "./PasswordLoss";
 import { PasswordReset } from "./PasswordReset";
-import React from "react";
 import { UserContext } from "../../UserContext";
 
 export const Login = () => {
@@ -12,13 +13,15 @@ export const Login = () => {
   if (login) return <Navigate to="/conta" />;
 
   return (
-    <div>
-      <Routes>
-        <Route path="/" element={<Form />} />
-        <Route path="criar" element={<CreateAccount />} />
-        <Route path="perdeu" element={<PasswordLoss />} />
-        <Route path="resetar" element={<PasswordReset />} />
-      </Routes>
-    </div>
+    <section className={styles.login}>
+      <div className={styles.forms}>
+        <Routes>
+          <Route path="/" element={<Form />} />
+          <Route path="criar" element={<CreateAccount />} />
+          <Route path="perdeu" element={<PasswordLoss />} />
+          <Route path="resetar" element={<PasswordReset />} />
+        </Routes>
+      </div>
+    </section>
   );
 };
