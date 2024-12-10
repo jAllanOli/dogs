@@ -6,7 +6,7 @@ import styles from "./Form.module.css";
 import btnStyles from "../../Components/Button.module.css";
 import { Input } from "../../Components/Input";
 import { Button } from "../../Components/Button";
-import { Error } from "../../Components/Error";
+import { Error } from "../../utils/Error";
 
 export const Form = () => {
   const username = useForm();

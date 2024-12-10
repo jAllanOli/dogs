@@ -6,6 +6,8 @@ import { Home } from "./Pages/Home";
 import { Login } from "./Pages/Login/Login";
 import "./App.css";
 import { UserStorage } from "./UserContext";
+import { User } from "./Pages/User/User";
+import { ProtectedRoute } from "./utils/ProtectedRoute";
 
 function App() {
   return (
@@ -15,7 +17,15 @@ function App() {
           <Header />
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/login/*" element={<Login />} />
+            <Route path="login/*" element={<Login />} />
+            <Route
+              path="conta/*"
+              element={
+                <ProtectedRoute>
+                  <User />
+                </ProtectedRoute>
+              }
+            />
           </Routes>
           <Footer />
         </UserStorage>

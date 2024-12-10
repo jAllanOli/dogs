@@ -5,7 +5,7 @@ import { USER_POST } from "../../Api";
 import React from "react";
 import { UserContext } from "../../UserContext";
 import { useFetch } from "../../hooks/useFetch";
-import { Error } from "../../Components/Error";
+import { Error } from "../../utils/Error";
 
 export const CreateAccount = () => {
   const username = useForm();
