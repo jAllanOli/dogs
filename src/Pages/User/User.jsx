@@ -1,3 +1,18 @@
+import { Route, Routes } from "react-router-dom";
+import { UserHeader } from "./UserHeader";
+import { Feed } from "../../Components/Feed";
+import { UserPhotoPost } from "./UserPhotoPost";
+import { UserStats } from "./UserStats";
+
 export const User = () => {
-  return <div>Usuário</div>;
+  return (
+    <section className="container">
+      <UserHeader />
+      <Routes>
+        <Route path="/" element={<Feed />} />
+        <Route path="postar" element={<UserPhotoPost />} />
+        <Route path="estatisticas" element={<UserStats />} />
+      </Routes>
+    </section>
+  );
 };
