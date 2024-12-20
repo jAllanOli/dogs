@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import { UserHeader } from "./UserHeader";
-import { Feed } from "../../Components/Feed";
+import { Feed } from "../../Components/Feed/Feed";
 import { UserPhotoPost } from "./UserPhotoPost";
 import { UserStats } from "./UserStats";
 
