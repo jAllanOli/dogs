@@ -9,7 +9,7 @@ export const Feed = () => {
       {modalPhoto && (
         <FeedModal photo={modalPhoto} setModalPhoto={setModalPhoto} />
       )}
-      <FeedPhotos setModalPhoto={setModalPhoto} />;
+      <FeedPhotos setModalPhoto={setModalPhoto} />
     </div>
   );
 };
