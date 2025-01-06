@@ -6,12 +6,12 @@ import { PhotoDelete } from "./PhotoDelete";
 import { Skeleton } from "../../utils/Skeleton";
 import styles from "./PhotoContent.module.css";
 
-export const PhotoContent = ({ data }) => {
+export const PhotoContent = ({ data, single }) => {
   const { photo, comments } = data;
   const user = React.useContext(UserContext);
 
   return (
-    <div className={styles.photo}>
+    <div className={`${styles.photo} ${single ? styles.single : ""}`}>
       <div className={styles.img}>
         <Skeleton src={photo.src} alt={photo.title} />
       </div>
@@ -35,7 +35,7 @@ export const PhotoContent = ({ data }) => {
           </ul>
         </div>
       </div>
-      <PhotoComments id={photo.id} comments={comments} />
+      <PhotoComments single={true} id={photo.id} comments={comments} />
     </div>
   );
 };
