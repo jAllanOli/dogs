@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { Link } from "react-router-dom";
-import { useForm } from "../../hooks/useForm";
+import { useForm } from "../../Hooks/useForm";
 import { UserContext } from "../../UserContext";
 import styles from "./Form.module.css";
 import btnStyles from "../../Components/Button.module.css";

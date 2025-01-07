@@ -1,10 +1,10 @@
 import { Input } from "../../Components/Input";
 import { Button } from "../../Components/Button";
-import { useForm } from "../../hooks/useForm";
+import { useForm } from "../../Hooks/useForm";
 import { USER_POST } from "../../Api";
 import React from "react";
 import { UserContext } from "../../UserContext";
-import { useFetch } from "../../hooks/useFetch";
+import { useFetch } from "../../Hooks/useFetch";
 import { Error } from "../../utils/Error";
 
 export const CreateAccount = () => {

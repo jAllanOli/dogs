@@ -1,6 +1,6 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import { useFetch } from "../../hooks/useFetch";
+import { useFetch } from "../../Hooks/useFetch";
 import { PHOTO_GET } from "../../Api";
 import { Loading } from "../../utils/Loading";
 import { Error } from "../../utils/Error";

@@ -6,7 +6,7 @@ import Estatisticas from "../../Assets/estatisticas.svg?react";
 import AdicionarFoto from "../../Assets/adicionar.svg?react";
 import Sair from "../../Assets/sair.svg?react";
 import styles from "./UserNav.module.css";
-import { useMedia } from "../../hooks/useMedia";
+import { useMedia } from "../../Hooks/useMedia";
 
 export const UserNav = () => {
   const [mobileMenu, setMobileMenu] = React.useState(false);

@@ -1,6 +1,6 @@
 import React from "react";
 import { PHOTOS_GET } from "../../Api";
-import { useFetch } from "../../hooks/useFetch";
+import { useFetch } from "../../Hooks/useFetch";
 import { Error } from "../../utils/Error";
 import { Loading } from "../../utils/Loading";
 import { FeedPhotosItem } from "./FeedPhotosItem";
