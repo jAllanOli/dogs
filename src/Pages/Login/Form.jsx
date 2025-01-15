@@ -7,6 +7,7 @@ import btnStyles from "../../Components/Button.module.css";
 import { Input } from "../../Components/Input";
 import { Button } from "../../Components/Button";
 import { Error } from "../../utils/Error";
+import { Head } from "../../utils/Head";
 
 export const Form = () => {
   const username = useForm();
@@ -23,6 +24,7 @@ export const Form = () => {
 
   return (
     <section className="animeLeft">
+      <Head title="Login" />
       <h1 className="title">Login</h1>
       <form className={styles.form} action="" onSubmit={handleSubmit}>
         <Input

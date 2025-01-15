@@ -1,6 +1,7 @@
 import React from "react";
 import { Input } from "../../Components/Input";
 import { Button } from "../../Components/Button";
+import { Head } from "../../utils/Head";
 import { Error } from "../../utils/Error";
 import { useForm } from "../../Hooks/useForm";
 import { useFetch } from "../../Hooks/useFetch";
@@ -41,6 +42,7 @@ export const UserPhotoPost = () => {
   }
   return (
     <section className={`${styles.photoPost}`}>
+      <Head title="Poste sua foto" />
       <form onSubmit={handleSubmit}>
         <Input label="Nome" type="text" name="nome" {...nome} />
         <Input label="Peso" type="text" name="peso" {...peso} />
