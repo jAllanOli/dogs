@@ -4,7 +4,7 @@ import { Button } from "../../Components/Button";
 import { Head } from "../../utils/Head";
 import { Error } from "../../utils/Error";
 import { useForm } from "../../Hooks/useForm";
-import useFetch from "../../Hooks/useFetch.js";
+import useFetch from "../../Hooks/useFetch";
 import { PHOTO_POST } from "../../Api";
 import styles from "./UserPhotoPost.module.css";
 import { useNavigate } from "react-router-dom";
