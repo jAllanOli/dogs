@@ -2,7 +2,7 @@ import { Input } from "../../Components/Input";
 import { Button } from "../../Components/Button";
 import { Error } from "../../utils/Error";
 import { useForm } from "../../Hooks/useForm";
-import { useFetch } from "../../Hooks/useFetch";
+import useFetch from "../../Hooks/useFetch";
 import { PASSWORD_LOSS } from "../../Api";
 import { Head } from "../../utils/Head";
 

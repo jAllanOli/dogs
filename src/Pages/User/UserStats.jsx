@@ -2,7 +2,7 @@ import React from "react";
 import { Loading } from "../../utils/Loading";
 import { Error } from "../../utils/Error";
 import { Head } from "../../utils/Head";
-import { useFetch } from "../../Hooks/useFetch";
+import useFetch from "../../Hooks/useFetch";
 import { STATS_GET } from "../../Api";
 
 const UserStatsGraphs = React.lazy(() => import("./UserStatsGraphs"));

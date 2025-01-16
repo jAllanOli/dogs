@@ -1,7 +1,7 @@
 import React from "react";
 import Enviar from "../../Assets/enviar.svg?react";
 import { Error } from "../../utils/Error";
-import { useFetch } from "../../Hooks/useFetch";
+import useFetch from "../../Hooks/useFetch";
 import { COMMENT_POST } from "../../Api";
 import styles from "./PhotoCommentsForm.module.css";
 
